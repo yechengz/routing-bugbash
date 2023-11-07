@@ -20,8 +20,6 @@ staticRedirects:
     statusCode: 308
 # adds authentication to your site
 authentication:
-  policyName: # my-auth-policy the cac policy you created
-  includePaths: # the paths which should be included in the auth policy
-  excludePaths: # the paths which should be exclude from the auth policy
-
+  policyName: auth02
+  includePaths: "/red"
 
