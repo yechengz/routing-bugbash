@@ -12,8 +12,8 @@ export const templateForColor = (color: Color): TemplateModule<any, any> => {
     const colorStr = color.toString();
   return {
     getPath: () => colorStr,
-    default: () => {
-      return <PageLayout color={color} />;
+    default: (props) => {
+      return <PageLayout color={color} {...props}/>;
     },
     getHeadConfig: () => ({
       title: colorStr + " Page",

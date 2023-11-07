@@ -33,11 +33,13 @@ const colorToRGB = (c: Color) => {
 
 }
 
-export const PageLayout = ({ color }: { color?: Color}) => {
+export const PageLayout = ({ color, children }: { color?: Color, children?: React.ReactChildren}) => {
   if (!color) {
     color = Color.GRAY;
   }
   return (
-    <div className={`h-screen`} style={{ backgroundColor: colorToRGB(color) }}/>
+    <div className={`h-screen`} style={{ backgroundColor: colorToRGB(color) }}>
+      {children}
+    </div>
   );
 };
