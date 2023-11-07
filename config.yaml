@@ -7,7 +7,7 @@ buildConfiguration:
       - package-lock.json
       - .npmrc
 dynamicRedirects:
-  # This is a rewrite because the status code is 200. It also takes advantage of splat support
+  # This is a rewrite because the status code is 200. It also takes advantage of built-in splat support.
   -
     from: /grey/*
     to: /gray/:splat
