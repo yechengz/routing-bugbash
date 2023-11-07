@@ -20,6 +20,7 @@ staticRedirects:
     statusCode: 308
 # adds authentication to your site
 authentication:
-  policyName: #nothing
-  includePaths: #noting
+  policyName: auth02
+  includePaths:
+    - /red # red is locked down
 
