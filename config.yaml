@@ -17,7 +17,7 @@ staticRedirects:
   -
     from: /grey-redirect
     to: /gray
-    statusCode: 305
+    statusCode: 308
 # adds authentication to your site
 authentication:
   policyName: # my-auth-policy the cac policy you created
