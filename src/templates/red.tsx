@@ -12,7 +12,7 @@ const OverrideTemplate = (props: any) => {
     return "undefined";
   }
 
-  const email = (window as any)?.YEXT_AUTH?.email || "UNKNOWN!"
+  const email = (window as any)?.YEXT_AUTH?.visitor?.email || "UNKNOWN!"
 
   return template.default({
     children: <div>{`You email is ${email}`}</div>
