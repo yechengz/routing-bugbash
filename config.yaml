@@ -6,4 +6,22 @@ buildConfiguration:
       - package.json
       - package-lock.json
       - .npmrc
+dynamicRedirects:
+  # This is a rewrite because the status code is 200. It also takes advantage of splat support
+  -
+    from: /grey/*
+    to: /gray/:splat
+    statusCode: 200
+  # This is a custom redirect because the status code is 3xx.
+staticRedirects:
+  -
+    from: /grey-redirect
+    to: /gray
+    statusCode: 305
+# adds authentication to your site
+authentication:
+  policyName: # my-auth-policy the cac policy you created
+  includePaths: # the paths which should be included in the auth policy
+  excludePaths: # the paths which should be exclude from the auth policy
+
 
