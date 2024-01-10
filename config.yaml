@@ -6,7 +6,7 @@ buildConfiguration:
       - package.json
       - package-lock.json
       - .npmrc
-dynamicRedirects:
+dynamicRoutes:
   # This is a rewrite because the status code is 200. It also takes advantage of built-in splat support.
   -
     from: /grey/*
@@ -17,7 +17,7 @@ dynamicRedirects:
     to: /:splat
     status: 200
   # This is a custom redirect because the status code is 3xx.
-staticRedirects:
+staticRoutes:
   -
     from: /grey-redirect
     to: /gray
