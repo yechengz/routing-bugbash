@@ -22,6 +22,10 @@ staticRoutes:
     from: /grey-redirect
     to: /gray
     status: 308
+  -
+    from: /external
+    to: www.example.com
+    status: 308
 # adds authentication to your site. Commented out as a policy with the name auth02 must exist
 # authentication:
 #   policyName: auth02
