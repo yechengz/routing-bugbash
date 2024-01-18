@@ -18,7 +18,7 @@ dynamicRoutes:
     status: 200
   -
     from: /external/*
-    to: www.example.com
+    to: https://www.example.com
     status: 308
   # This is a custom redirect because the status code is 3xx.
 staticRoutes:
