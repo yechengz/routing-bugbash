@@ -16,6 +16,10 @@ dynamicRoutes:
     from: /simulated-prefix/*
     to: /:splat
     status: 200
+  -
+    from: /external/*
+    to: https://www.example.com/:splat
+    status: 308
 
   # This is a custom redirect because the status code is 3xx.
 staticRoutes:
