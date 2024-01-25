@@ -11,7 +11,7 @@ dynamicRoutes:
   -
     from: /grey/*
     to: /gray/:splat
-    status: 200
+    status: 301
   -
     from: /simulated-prefix/*
     to: /:splat
