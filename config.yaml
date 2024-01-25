@@ -27,7 +27,7 @@ dynamicRoutes:
   -
     from: /example/test1/:test/test2
     to: https://www.example.com/:test
-    status: 308
+    status: 200
 
   # This is a custom redirect because the status code is 3xx.
 staticRoutes:
