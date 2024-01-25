@@ -9,13 +9,9 @@ buildConfiguration:
 dynamicRoutes:
   # This is a rewrite because the status code is 200. It also takes advantage of built-in splat support.
   -
-    from: /test/*
-    to: /test2/:splat
-    status: 200
-  -
-    from: /test2/*
-    to: /:splat
-    status: 200
+    from: /test/:placeholder
+    to: https://:placeholder.com
+    status: 301
 
   # This is a custom redirect because the status code is 3xx.
 staticRoutes:
