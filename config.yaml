@@ -22,8 +22,8 @@ dynamicRoutes:
     status: 308
   -
     from: /google/*
-    to: https://www.google.com/
-    status: 200
+    to: https://www.google.com:443
+    status: 302
   -
     from: /example/test1/:test/test2
     to: https://www.example.com/:test
