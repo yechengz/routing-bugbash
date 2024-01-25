@@ -17,13 +17,9 @@ dynamicRoutes:
     to: /:splat
     status: 200
   -
-    from: /external/*
-    to: https://www.example.com
-    status: 308
-  -
-    from: /google/:test/*
-    to: https://www.google.com:443/:test/:splat
-    status: 302
+    from: /gray/*
+    to: /:splat
+    status: 200
 
   # This is a custom redirect because the status code is 3xx.
 staticRoutes:
