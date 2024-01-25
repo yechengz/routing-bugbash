@@ -23,11 +23,11 @@ dynamicRoutes:
   -
     from: /google/*
     to: https://www.google.com/
-    status: 308
+    status: 200
   -
     from: /example/test1/:test/test2
     to: https://www.example.com/:test
-    status: 200
+    status: 301
 
   # This is a custom redirect because the status code is 3xx.
 staticRoutes:
