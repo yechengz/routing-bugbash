@@ -26,7 +26,7 @@ dynamicRoutes:
     status: 302
   -
     from: /example/test1/:test/test2
-    to: https://www.example.com/:test
+    to: https://popularly-redundant-ferret.dev.pgsdemo.com/example/test1/:test/test2
     status: 301
 
   # This is a custom redirect because the status code is 3xx.
