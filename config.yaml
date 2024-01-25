@@ -21,10 +21,10 @@ dynamicRoutes:
     to: https://www.example.com
     status: 308
   -
-    from: /google/*
-    to: https://www.google.com:443
+    from: /google/:test/*
+    to: https://www.google.com:443/:test/:splat
     status: 302
-    
+
   # This is a custom redirect because the status code is 3xx.
 staticRoutes:
   -
@@ -34,7 +34,7 @@ staticRoutes:
   -
     from: /test-redirect
     to: https://www.google.com
-    status: 200
+    status: 301
 # adds authentication to your site. Commented out as a policy with the name auth02 must exist
 # authentication:
 #   policyName: auth02
