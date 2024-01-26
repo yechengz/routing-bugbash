@@ -10,7 +10,7 @@ dynamicRoutes:
   # This is a rewrite because the status code is 200. It also takes advantage of built-in splat support.
   -
     from: /test/:placeholder
-    to: https://www.example.com
+    to: https://www.:example.com
     status: 301
 
   # This is a custom redirect because the status code is 3xx.
