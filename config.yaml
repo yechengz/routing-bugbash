@@ -6,18 +6,7 @@ buildConfiguration:
       - package.json
       - package-lock.json
       - .npmrc
-dynamicRoutes:
-  # This is a rewrite because the status code is 200. It also takes advantage of built-in splat support.
-  -
-    from: /test/:placeholder
-    to: https://www.:example.com
-    status: 301
-
-  # This is a custom redirect because the status code is 3xx.
-staticRoutes:
 # adds authentication to your site. Commented out as a policy with the name auth02 must exist
-# authentication:
-#   policyName: auth02
-#   includePaths:
-#     - /red # red is locked down
+authentication:
+  policyName: auth-policy2
 
