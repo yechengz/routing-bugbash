@@ -1,8 +1,0 @@
-import * as React from "react";
-import { templateForColor } from "../ColorBase";
-import {Color} from "../PageLayout"
-
-const template = templateForColor(Color.BROWN)
-export const getPath = template.getPath;
-export const getHeadConfig = template.getHeadConfig;
-export default template.default;
