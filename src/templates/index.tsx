@@ -8,16 +8,7 @@ const knownColors = ["blue", "brown", "gray", "green", "orange", "purple", "red"
 
 const Index = () => {
   return (
-    <div className="">
-      {knownColors.map((e) => (
-        <>
-          <a key={e} href={`/${e}`}>
-            {e}
-          </a>
-          <br />
-        </>
-      ))}
-    </div>
+    "01932c55-a1d2-70c2-81b6-80caae0e1a70"
   );
 };
 
