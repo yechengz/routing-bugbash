@@ -6,9 +6,6 @@ buildConfiguration:
       - package.json
       - package-lock.json
       - .npmrc
-# adds authentication to your site. Commented out as a policy with the name auth02 must exist
-authentication:
-  policyName: auth-policy2
 staticRoutes:
   - from: /.well-known/yext-domain-challenge/01932c55-a1d2-70c2-81b6-80caae0e1a70
     to: /index.html
