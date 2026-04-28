@@ -6,8 +6,4 @@ buildConfiguration:
       - package.json
       - package-lock.json
       - .npmrc
-staticRoutes:
-  - from: /.well-known/yext-domain-challenge/01932c55-a1d2-70c2-81b6-80caae0e1a70
-    to: /index.html
-    status: 200
 
